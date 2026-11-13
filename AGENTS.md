@@ -16,7 +16,7 @@ Công nghệ hoặc mẫu thiết kế mà skill khuyến nghị không được
 
 ## 4. Testing Strategy và Quality Gates bắt buộc
 
-- Áp dụng [Testing Strategy & Test Data](../nghiepvu/08-kiem-thu/chung/testing-strategy.md), [Test Case Standard](../nghiepvu/08-kiem-thu/chung/test-case-standard.md), [Quality Gates & Agent Workflow](../nghiepvu/08-kiem-thu/chung/quality-gates.md); với đồng bộ units dùng [bộ ca Slice A](../nghiepvu/08-kiem-thu/daotao/slice-a-test-cases.md). Máy/CI thiếu bộ tài liệu phải lấy đúng bản đã duyệt trước khi code.
+- Áp dụng [Testing Strategy & Test Data](../nghiepvu/08-kiem-thu/chung/testing-strategy.md), [Test Case Standard](../nghiepvu/08-kiem-thu/chung/test-case-standard.md), [Quality Gates & Agent Workflow](../nghiepvu/08-kiem-thu/chung/quality-gates.md); với đồng bộ units dùng [bộ ca Slice A](../nghiepvu/08-kiem-thu/daotao/slice-a-test-cases.md). Lấy đúng bản tài liệu đã duyệt nếu workspace thiếu nguồn. Chạy các kiểm thử bắt buộc trên môi trường local đã xác minh.
 - Trước code: xác định nguồn yêu cầu, ID test cases, expected results, acceptance criteria, gate liên quan, fixture và phần thật/mock. Không tự đặt nghiệp vụ hoặc thay Q01–Q08/contract/schema.
 - Dùng `test-driven-development` khi phát triển feature/bugfix; `systematic-debugging` khi gặp lỗi; `verification-before-completion` trước khi tuyên bố hoàn thành. Task tài liệu chỉ cần gate tài liệu phù hợp.
 - Không tuyên bố PASS nếu chưa chạy. Phân biệt Unit/mock, MockMvc, integration SQL Server thật, HTTP thật và hai backend MVP chạy thật; `contextLoads()` không chứng minh nghiệp vụ/DB/API đúng.
@@ -50,5 +50,5 @@ Công nghệ hoặc mẫu thiết kế mà skill khuyến nghị không được
 - Phạm vi Codex tại repo này: backend SIS/Đào tạo và tích hợp được giao; không tạo frontend hoặc nghiệp vụ SHCN/DRL/Học bổng. Không tự tạo task, API, bảng, skeleton, code hoặc UI của SHCN/DRL/Học bổng; chỉ nhắc để xác định ranh giới/ảnh hưởng tích hợp.
 - Nếu cần thay đổi Auth/Foundation/Shared hoặc contract chung ngoài task: nêu lý do/phạm vi ảnh hưởng, xin xác nhận và phối hợp owner liên quan; không tự gán owner hoặc sửa module người khác để test xanh.
 - Package theo module trước, layer sau; dùng public interface/application service thay repository/entity nội bộ xuyên module; không phụ thuộc vòng. Migration CTSV dùng một Flyway history/version duy nhất, phối hợp trước merge theo nguồn chuẩn.
-- Feature branch ngắn, main ổn định, PR thường xuyên; Codex không tự commit/push/tạo PR/merge/đổi cấu hình GitHub/deploy khi chưa có lệnh trực tiếp. Không push main.
+- Ưu tiên feature branch và giữ `main` ổn định. Dùng PR khi cần tích hợp, review theo cách nhóm thống nhất. Ngoại lệ với `main` cần nhóm xác nhận trước. Codex chỉ commit, push, tạo PR, merge, đổi cấu hình GitHub hoặc deploy khi được giao trực tiếp.
 - Người dùng trực tiếp cài công cụ, thiết lập SQL Server test/kết nối và kiểm môi trường P00; Codex chỉ hướng dẫn/kiểm khi được yêu cầu. Không tự kết nối SQL hoặc xin credential trong task tài liệu. Không dùng báo cáo thiết kế làm runtime PASS.

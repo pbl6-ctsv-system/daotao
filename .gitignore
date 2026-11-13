@@ -31,3 +31,28 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Generated local runtime and private material (created by dev tools) ###
+.local/
+.runtime/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.cer
+*.crt
+*.log
+*.pid
+*.bak
+*.trn
+*.mdf
+*.ndf
+*.ldf
+application-*.private.properties
+node_modules/
+dist/
