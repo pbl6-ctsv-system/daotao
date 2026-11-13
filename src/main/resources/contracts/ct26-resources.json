@@ -1,0 +1,366 @@
+[
+  {
+    "resource": "units",
+    "url": "/api/dao-tao/don-vi",
+    "table": "DonVi",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "ethnicities",
+    "url": "/api/dao-tao/dan-toc",
+    "table": "DanToc",
+    "primaryKey": "DanTocID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "nationalities",
+    "url": "/api/dao-tao/quoc-tich",
+    "table": "QuocTich",
+    "primaryKey": "QuocTichID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "localities",
+    "url": "/api/dao-tao/dia-phuong",
+    "table": "DiaPhuong",
+    "primaryKey": "DiaPhuongID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "plans",
+    "url": "/api/dao-tao/ke-hoach",
+    "table": "KeHoach",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "cohorts",
+    "url": "/api/dao-tao/khoa-hoc",
+    "table": "KhoaHoc",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "national-majors",
+    "url": "/api/dao-tao/nganh-quoc-gia",
+    "table": "NganhQG",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "internal-majors",
+    "url": "/api/dao-tao/nganh-noi-bo",
+    "table": "NganhTQ",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "programs",
+    "url": "/api/dao-tao/chuong-trinh-dao-tao",
+    "table": "Nganh",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "classes",
+    "url": "/api/dao-tao/lop",
+    "table": "Lop",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "students",
+    "url": "/api/dao-tao/sinh-vien",
+    "table": "HoSoSV",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 500,
+      "maxLimit": 1000,
+      "maxRows": 30000,
+      "maxBytes": 67108864,
+      "deadlineSeconds": 120
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "academic-results",
+    "url": "/api/dao-tao/hoc-vu",
+    "table": "HocVu",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 1000,
+      "maxLimit": 2000,
+      "maxRows": 150000,
+      "maxBytes": 134217728,
+      "deadlineSeconds": 120
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "staff",
+    "url": "/api/dao-tao/can-bo",
+    "table": "HoSoCanBo",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "class-advisors",
+    "url": "/api/dao-tao/co-van-lop",
+    "table": "CVHT_GV",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 10000,
+      "maxBytes": 8388608,
+      "deadlineSeconds": 30
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "courses",
+    "url": "/api/dao-tao/hoc-phan",
+    "table": "HocPhan",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "curriculum-items",
+    "url": "/api/dao-tao/khung-chuong-trinh",
+    "table": "KhungCT",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "course-results",
+    "url": "/api/dao-tao/diem-ky-hoc",
+    "table": "DiemKyHoc",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 1000,
+      "maxLimit": 2000,
+      "maxRows": 1000000,
+      "maxBytes": 134217728,
+      "deadlineSeconds": 120
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "recognized-course-results",
+    "url": "/api/dao-tao/diem-mien",
+    "table": "DiemMien",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 1000,
+      "maxLimit": 2000,
+      "maxRows": 1000000,
+      "maxBytes": 134217728,
+      "deadlineSeconds": 120
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "reference-values",
+    "url": "/api/dao-tao/tieu-thuc",
+    "table": "TieuThuc",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "rooms",
+    "url": "/api/dao-tao/phong-hoc",
+    "table": "PhongHoc",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "int"
+  },
+  {
+    "resource": "room-usage",
+    "url": "/api/dao-tao/lich-su-dung-phong",
+    "table": "LichSuDungPhong",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 1000,
+      "maxLimit": 2000,
+      "maxRows": 1000000,
+      "maxBytes": 134217728,
+      "deadlineSeconds": 120
+    },
+    "sqlKeyType": "int"
+  },
+  {
+    "resource": "room-locks",
+    "url": "/api/dao-tao/khoa-phong",
+    "table": "KhoaPhong",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "int"
+  },
+  {
+    "resource": "room-lock-details",
+    "url": "/api/dao-tao/chi-tiet-khoa-phong",
+    "table": "KhoaPhongChiTiet",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "int"
+  },
+  {
+    "resource": "conduct-class-assignments",
+    "url": "/api/dao-tao/phan-lop-ren-luyen",
+    "table": "PhanLopRenLuyen",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "class-merges",
+    "url": "/api/dao-tao/ghep-lop-sinh-hoat",
+    "table": "GhepLopSinhHoat",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "bigint"
+  },
+  {
+    "resource": "student-progress",
+    "url": "/api/dao-tao/tien-do-sinh-vien",
+    "table": "TienDoSinhVien",
+    "primaryKey": "ID",
+    "profile": {
+      "defaultLimit": 100,
+      "maxLimit": 500,
+      "maxRows": 100000,
+      "maxBytes": 33554432,
+      "deadlineSeconds": 60
+    },
+    "sqlKeyType": "bigint"
+  }
+]

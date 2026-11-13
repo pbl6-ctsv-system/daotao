@@ -1,0 +1,2429 @@
+[
+  {
+    "resource": "ethnicities",
+    "table": "DanToc",
+    "target": "dan_toc",
+    "fields": [
+      {
+        "sql": "DanTocID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaDanToc",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenDanToc",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "nationalities",
+    "table": "QuocTich",
+    "target": "quoc_tich",
+    "fields": [
+      {
+        "sql": "QuocTichID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaQuocTich",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenQuocTich",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "localities",
+    "table": "DiaPhuong",
+    "target": "dia_phuong",
+    "fields": [
+      {
+        "sql": "DiaPhuongID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaDP",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenDP",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "plans",
+    "table": "KeHoach",
+    "target": "hoc_ky",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaKH",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenKH",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NgayDay",
+        "json": "source_day",
+        "target": "ngay_day_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TuanDau",
+        "json": "source_first_week",
+        "target": "tuan_dau_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "SoTuan",
+        "json": "weeks",
+        "target": "so_tuan_nguon",
+        "sqlType": "decimal(28,10)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NgayDau",
+        "json": "source_start_day",
+        "target": "ngay_dau_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaNganh",
+        "json": "major_code_source",
+        "target": "ma_nganh_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "Raw REF per current detailed contract; no inferred FK"
+      },
+      {
+        "sql": "NamHoc",
+        "json": "academic_year_source",
+        "target": "nam_hoc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "cohorts",
+    "table": "KhoaHoc",
+    "target": "khoa_hoc",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaKH",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NamTuyenSinh",
+        "json": "admission_year",
+        "target": "nam_tuyen_sinh_nguon",
+        "sqlType": "int",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "national-majors",
+    "table": "NganhQG",
+    "target": "nganh_quoc_gia",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaNganhQG",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenNganhQG",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "CapDT",
+        "json": "education_level",
+        "target": "cap_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "internal-majors",
+    "table": "NganhTQ",
+    "target": "nganh_noi_bo",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaNganhTQ",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenNganhTQ",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NganhQGID",
+        "json": "national_major_source_id",
+        "target": "nganh_quoc_gia_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "nganh_quoc_gia",
+        "raw": "nganh_quoc_gia_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "CapDT",
+        "json": "education_level",
+        "target": "cap_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KhoiNganh",
+        "json": "major_group",
+        "target": "khoi_nganh_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Huy",
+        "json": "cancellation_status",
+        "target": "trang_thai_huy_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KyHieu",
+        "json": "classification_symbol",
+        "target": "ky_hieu_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "programs",
+    "table": "Nganh",
+    "target": "chuong_trinh_dao_tao",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaNganh",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenNganh",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NganhTQID",
+        "json": "internal_major_source_id",
+        "target": "nganh_noi_bo_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "nganh_noi_bo",
+        "raw": "nganh_noi_bo_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "NganhQGID",
+        "json": "national_major_source_id",
+        "target": "nganh_quoc_gia_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "nganh_quoc_gia",
+        "raw": "nganh_quoc_gia_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "CapDTSo",
+        "json": "education_level",
+        "target": "cap_dao_tao_so_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "SoTinChi",
+        "json": "credits",
+        "target": "so_tin_chi",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "so_tin_chi_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "SoHK",
+        "json": "semester_count",
+        "target": "so_hoc_ky",
+        "sqlType": "int",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "so_hoc_ky_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "NgonNguDT",
+        "json": "teaching_language",
+        "target": "ngon_ngu_dao_tao",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "BatDau",
+        "json": "source_start",
+        "target": "bat_dau_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KetThuc",
+        "json": "source_end",
+        "target": "ket_thuc_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KyBDauID",
+        "json": "start_plan_source_id",
+        "target": "hoc_ky_bat_dau_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "hoc_ky",
+        "raw": "hoc_ky_bat_dau_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "KyKThucID",
+        "json": "end_plan_source_id",
+        "target": "hoc_ky_ket_thuc_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "hoc_ky",
+        "raw": "hoc_ky_ket_thuc_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "KyHieu",
+        "json": "classification_symbol",
+        "target": "ky_hieu_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "InUse",
+        "json": "usage_flag_source",
+        "target": "dang_su_dung_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "CapDT",
+        "json": "education_level_code",
+        "target": "cap_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "Raw REF per current detailed contract; no inferred FK"
+      },
+      {
+        "sql": "TenNganhMoi",
+        "json": "new_name",
+        "target": "ten_nganh_moi_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LoaiCTDT",
+        "json": "curriculum_type",
+        "target": "loai_ctdt_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "classes",
+    "table": "Lop",
+    "target": "lop_sinh_hoat",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaLop",
+        "json": "code",
+        "target": "ma",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenLop",
+        "json": "name",
+        "target": "ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NganhID",
+        "json": "program_source_id",
+        "target": "chuong_trinh_dao_tao_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "chuong_trinh_dao_tao",
+        "raw": "chuong_trinh_dao_tao_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "KhoaQLID",
+        "json": "management_unit_source_id",
+        "target": "khoa_quan_ly_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "don_vi",
+        "raw": "khoa_quan_ly_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "HinhThuc",
+        "json": "study_mode",
+        "target": "hinh_thuc_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "CapDT",
+        "json": "education_level",
+        "target": "cap_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KhoaHocID",
+        "json": "cohort_source_id",
+        "target": "khoa_hoc_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "khoa_hoc",
+        "raw": "khoa_hoc_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "MaKhung",
+        "json": "curriculum_code",
+        "target": "ma_khung_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "Raw REF per current detailed contract; no inferred FK"
+      },
+      {
+        "sql": "LopGhep",
+        "json": "combined_class_flag_source",
+        "target": "lop_ghep_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "students",
+    "table": "HoSoSV",
+    "target": "sinh_vien",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaSV",
+        "json": "student_code",
+        "target": "mssv",
+        "sqlType": "nvarchar(64)",
+        "localType": "nvarchar(64)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HoTen",
+        "json": "full_name",
+        "target": "ho_ten",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NgaySinh",
+        "json": "birth_date",
+        "target": "ngay_sinh",
+        "sqlType": "date",
+        "localType": "date",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "GioiTinh",
+        "json": "gender",
+        "target": "gioi_tinh",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NoiSinhID",
+        "json": "birth_place_source_id",
+        "target": "noi_sinh_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "dia_phuong",
+        "raw": "noi_sinh_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "DanTocID",
+        "json": "ethnicity_source_id",
+        "target": "dan_toc_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "dan_toc",
+        "raw": "dan_toc_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "QuocTichID",
+        "json": "nationality_source_id",
+        "target": "quoc_tich_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "quoc_tich",
+        "raw": "quoc_tich_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "SoCCCD",
+        "json": "citizen_id",
+        "target": "so_cccd",
+        "sqlType": "nvarchar(64)",
+        "localType": "nvarchar(64)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "SoDienThoai",
+        "json": "phone_number",
+        "target": "so_dien_thoai",
+        "sqlType": "nvarchar(64)",
+        "localType": "nvarchar(64)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Email",
+        "json": "email",
+        "target": "dia_chi_email",
+        "sqlType": "nvarchar(254)",
+        "localType": "nvarchar(254)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LopID",
+        "json": "current_class_source_id",
+        "target": "lop_hien_tai_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "lop_sinh_hoat",
+        "raw": "lop_hien_tai_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "KhoaQLID",
+        "json": "management_unit_source_id",
+        "target": "khoa_quan_ly_hien_tai_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "don_vi",
+        "raw": "khoa_quan_ly_hien_tai_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "KhoaHocID",
+        "json": "cohort_source_id",
+        "target": "khoa_hoc_hien_tai_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "khoa_hoc",
+        "raw": "khoa_hoc_hien_tai_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "NganhID",
+        "json": "program_source_id",
+        "target": "chuong_trinh_hien_tai_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "chuong_trinh_dao_tao",
+        "raw": "chuong_trinh_hien_tai_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "TrangThaiHocTap",
+        "json": "study_status",
+        "target": "trang_thai_hoc_tap_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "CapDT",
+        "json": "education_level",
+        "target": "cap_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocKyApDungID",
+        "json": "status_plan_source_id",
+        "target": "hoc_ky_ap_dung_nguon_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "hoc_ky",
+        "raw": "hoc_ky_ap_dung_nguon_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "HocKyBDID",
+        "json": "start_plan_source_id",
+        "target": "hoc_ky_bat_dau_nguon_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "hoc_ky",
+        "raw": "hoc_ky_bat_dau_nguon_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "HocKyKTID",
+        "json": "end_plan_source_id",
+        "target": "hoc_ky_ket_thuc_nguon_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "hoc_ky",
+        "raw": "hoc_ky_ket_thuc_nguon_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "MaHS",
+        "json": "student_record_code",
+        "target": "ma_ho_so_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NgayNhapHoc",
+        "json": "admission_date_source",
+        "target": "ngay_nhap_hoc_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HeDT",
+        "json": "education_system_code",
+        "target": "he_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "Raw REF per current detailed contract; no inferred FK"
+      },
+      {
+        "sql": "NgayLuu",
+        "json": "stored_at_source",
+        "target": "ngay_luu_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LoaiLuu",
+        "json": "storage_type",
+        "target": "loai_luu_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocKyHanHocID",
+        "json": "study_deadline_plan_source_id",
+        "target": "hoc_ky_han_hoc_nguon_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "hoc_ky",
+        "raw": "hoc_ky_han_hoc_nguon_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "CLC",
+        "json": "quality_program_flag_source",
+        "target": "clc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "academic-results",
+    "table": "HocVu",
+    "target": "du_lieu_hoc_vu_dong_bo",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HoSoSVID",
+        "json": "student_source_id",
+        "target": "sinh_vien_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "sinh_vien",
+        "raw": "sinh_vien_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "KeHoachID",
+        "json": "plan_source_id",
+        "target": "hoc_ky_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "hoc_ky",
+        "raw": "hoc_ky_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "NganhID",
+        "json": "program_source_id",
+        "target": "chuong_trinh_dao_tao_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": true,
+        "parent": "chuong_trinh_dao_tao",
+        "raw": "chuong_trinh_dao_tao_id_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "NamHoc",
+        "json": "source_year_index",
+        "target": "nam_hoc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HK",
+        "json": "source_semester_index",
+        "target": "hoc_ky_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HPDangKy",
+        "json": "registered_course_load",
+        "target": "hp_dang_ky",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "hp_dang_ky_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "HPBatBuoc",
+        "json": "required_course_load",
+        "target": "hp_bat_buoc",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "hp_bat_buoc_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "SoTCHocLai",
+        "json": "repeated_credits",
+        "target": "so_tc_hoc_lai",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "so_tc_hoc_lai_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "DiemTBHT10",
+        "json": "study_average_10",
+        "target": "diem_tb_hoc_tap_he_10",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "diem_tb_hoc_tap_he_10_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "DiemTBHB",
+        "json": "scholarship_average",
+        "target": "diem_tb_hoc_bong",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "diem_tb_hoc_bong_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "XepLoaiCK",
+        "json": "closing_classification",
+        "target": "xep_loai_ck",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HPTichLuy",
+        "json": "accumulated_course_load",
+        "target": "hp_tich_luy",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "hp_tich_luy_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "DiemTBTL",
+        "json": "accumulated_average",
+        "target": "diem_tb_tich_luy",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "diem_tb_tich_luy_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "DiemTBTLThang10",
+        "json": "accumulated_average_10",
+        "target": "diem_tb_tich_luy_he_10",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "diem_tb_tich_luy_he_10_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "XepLoai",
+        "json": "classification",
+        "target": "xep_loai",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KLDK",
+        "json": "registered_load",
+        "target": "kl_dang_ky",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "kl_dang_ky_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "KLHL",
+        "json": "repeated_load",
+        "target": "kl_hoc_lai",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "kl_hoc_lai_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "TCKhung",
+        "json": "curriculum_credits",
+        "target": "tc_khung",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "tc_khung_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "TCTiendo",
+        "json": "progress_credits",
+        "target": "tc_tien_do",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "tc_tien_do_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "TCTyle",
+        "json": "credit_ratio",
+        "target": "tc_ty_le",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": "tc_ty_le_goc_nguon",
+        "ref": null
+      },
+      {
+        "sql": "DiemRL",
+        "json": "conduct_score_source",
+        "target": "diem_ren_luyen_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "ThoiHoc",
+        "json": "withdrawal_status",
+        "target": "thoi_hoc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NgungHoc",
+        "json": "interruption_status",
+        "target": "ngung_hoc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "SoKyNgung",
+        "json": "interrupted_semester_count_source",
+        "target": "so_ky_ngung_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "IDCodeHoc",
+        "json": "study_plan_code_source",
+        "target": "ma_ky_hoc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "Raw REF per current detailed contract; no inferred FK"
+      },
+      {
+        "sql": "DungHoc",
+        "json": "stop_flag_source",
+        "target": "dung_hoc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "courses",
+    "table": "HocPhan",
+    "target": "hoc_phan",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaHP",
+        "json": "course_code",
+        "target": "ma_hoc_phan_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TenHP",
+        "json": "course_name",
+        "target": "ten_hoc_phan_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "SoTC",
+        "json": "credits",
+        "target": "so_tin_chi_nguon",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "DoAn",
+        "json": "project_credits",
+        "target": "so_tin_chi_do_an_nguon",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "ThucTap",
+        "json": "internship_flag_source",
+        "target": "co_thuc_tap_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaCongThuc",
+        "json": "grading_formula_code",
+        "target": "ma_cong_thuc_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "MaCongThuc: mã nguồn; không bảng công thức"
+      },
+      {
+        "sql": "LoaiHP",
+        "json": "course_type",
+        "target": "loai_hoc_phan_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "CapDT",
+        "json": "education_level",
+        "target": "cap_dao_tao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HPao",
+        "json": "virtual_course_type",
+        "target": "loai_hoc_phan_ao_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "DATN",
+        "json": "graduation_project_flag_source",
+        "target": "co_do_an_tot_nghiep_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "curriculum-items",
+    "table": "KhungCT",
+    "target": "khung_chuong_trinh",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaKhung",
+        "json": "curriculum_code",
+        "target": "ma_khung_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocPhanID",
+        "json": "course_source_id",
+        "target": "hoc_phan_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_phan",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocPhanDuocThayTheID",
+        "json": "replaced_course_source_id",
+        "target": "hoc_phan_duoc_thay_the_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_phan",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocKy",
+        "json": "curriculum_semester",
+        "target": "hoc_ky_trong_khung_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TuChon",
+        "json": "elective_flag_source",
+        "target": "co_tu_chon_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TQDA",
+        "json": "project_prerequisite_source",
+        "target": "tien_quyet_do_an_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "DATN",
+        "json": "graduation_classification",
+        "target": "phan_loai_tot_nghiep_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "course-results",
+    "table": "DiemKyHoc",
+    "target": "diem_ky_hoc",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KeHoachID",
+        "json": "plan_source_id",
+        "target": "hoc_ky_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_ky",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HoSoSVID",
+        "json": "student_source_id",
+        "target": "sinh_vien_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "sinh_vien",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocPhanID",
+        "json": "course_source_id",
+        "target": "hoc_phan_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_phan",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocPhanTuongDuongID",
+        "json": "equivalent_course_source_id",
+        "target": "hoc_phan_tuong_duong_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_phan",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Diem",
+        "json": "grade",
+        "target": "diem_nguon",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Note",
+        "json": "note",
+        "target": "ghi_chu_nguon",
+        "sqlType": "nvarchar(2000)",
+        "localType": "nvarchar(2000)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocLai",
+        "json": "retake_flag_source",
+        "target": "co_hoc_lai_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "IsChecked",
+        "json": "check_status_source",
+        "target": "trang_thai_kiem_tra_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocPhi",
+        "json": "course_tuition",
+        "target": "hoc_phi_hoc_phan_nguon",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NoHphi",
+        "json": "tuition_debt_flag_source",
+        "target": "co_no_hoc_phi_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "SoCT",
+        "json": "document_number",
+        "target": "so_chung_tu_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaHS_MaHP",
+        "json": "student_course_reference",
+        "target": "ma_doi_chieu_ho_so_hoc_phan_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "Chuỗi đối chiếu nguồn, không UNIQUE"
+      }
+    ]
+  },
+  {
+    "resource": "recognized-course-results",
+    "table": "DiemMien",
+    "target": "diem_mien",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KeHoachID",
+        "json": "plan_source_id",
+        "target": "hoc_ky_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_ky",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocPhanID",
+        "json": "course_source_id",
+        "target": "hoc_phan_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_phan",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HoSoSVID",
+        "json": "student_source_id",
+        "target": "sinh_vien_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "sinh_vien",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Diem",
+        "json": "grade",
+        "target": "diem_nguon",
+        "sqlType": "decimal(28,10)",
+        "localType": "decimal(28,10)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LoaiDiem",
+        "json": "recognition_type",
+        "target": "loai_diem_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NgayCN",
+        "json": "recognized_on",
+        "target": "ngay_cong_nhan_nguon",
+        "sqlType": "date",
+        "localType": "date",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "GhiChu",
+        "json": "note",
+        "target": "ghi_chu_nguon",
+        "sqlType": "nvarchar(2000)",
+        "localType": "nvarchar(2000)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocPhanTuongDuongID",
+        "json": "equivalent_course_source_id",
+        "target": "hoc_phan_tuong_duong_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_phan",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocLai",
+        "json": "retake_flag_source",
+        "target": "co_hoc_lai_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "reference-values",
+    "table": "TieuThuc",
+    "target": "tieu_thuc",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Ma",
+        "json": "code",
+        "target": "ma_nguon",
+        "sqlType": "nvarchar(128)",
+        "localType": "nvarchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Ten",
+        "json": "name",
+        "target": "ten_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "GiaTri",
+        "json": "value",
+        "target": "gia_tri_nguon",
+        "sqlType": "nvarchar(512)",
+        "localType": "nvarchar(512)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Note",
+        "json": "note",
+        "target": "ghi_chu_nguon",
+        "sqlType": "nvarchar(2000)",
+        "localType": "nvarchar(2000)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "rooms",
+    "table": "PhongHoc",
+    "target": "phong_hoc",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "int",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "SoPhong",
+        "json": "room_code",
+        "target": "ma_phong_nguon",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaGD",
+        "json": "building_code_source",
+        "target": "ma_giang_duong_nguon",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NoUse",
+        "json": "usage_flag_source",
+        "target": "co_khong_su_dung_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Lock",
+        "json": "lock_flag_source",
+        "target": "co_khoa_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "room-usage",
+    "table": "LichSuDungPhong",
+    "target": "lich_su_dung_phong",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "int",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MalopHP",
+        "json": "course_class_code",
+        "target": "ma_lop_hoc_phan_nguon",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Phong",
+        "json": "room_code_reference",
+        "target": "ma_phong_tham_chieu",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "PhongHoc.SoPhong"
+      },
+      {
+        "sql": "Ngay",
+        "json": "usage_date",
+        "target": "ngay_su_dung_nguon",
+        "sqlType": "date",
+        "localType": "date",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TietDau",
+        "json": "first_period",
+        "target": "tiet_dau_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TietCuoi",
+        "json": "last_period",
+        "target": "tiet_cuoi_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaLT",
+        "json": "schedule_reference",
+        "target": "ma_lich_tham_chieu",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "MaNB",
+        "json": "absence_makeup_reference",
+        "target": "ma_nghi_bu_tham_chieu",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KoShow",
+        "json": "hidden_flag_source",
+        "target": "co_an_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocOnline",
+        "json": "online_flag_source",
+        "target": "co_hoc_truc_tuyen_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NgayLe",
+        "json": "holiday_flag_source",
+        "target": "co_ngay_le_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LichThi",
+        "json": "exam_flag_source",
+        "target": "co_lich_thi_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "room-locks",
+    "table": "KhoaPhong",
+    "target": "khoa_phong",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "int",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "PhieuKhoa",
+        "json": "lock_reference",
+        "target": "ma_phieu_khoa_nguon",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "TuNgay",
+        "json": "from_date",
+        "target": "tu_ngay_nguon",
+        "sqlType": "date",
+        "localType": "date",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "DenNgay",
+        "json": "to_date",
+        "target": "den_ngay_nguon",
+        "sqlType": "date",
+        "localType": "date",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KhoaT7",
+        "json": "saturday_flag_source",
+        "target": "co_khoa_thu_bay_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KhoaCN",
+        "json": "sunday_flag_source",
+        "target": "co_khoa_chu_nhat_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "room-lock-details",
+    "table": "KhoaPhongChiTiet",
+    "target": "chi_tiet_khoa_phong",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "int",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "PhieuCT",
+        "json": "lock_reference",
+        "target": "ma_phieu_khoa_tham_chieu",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "KhoaPhong.PhieuKhoa"
+      },
+      {
+        "sql": "TuNgayCT",
+        "json": "from_date",
+        "target": "tu_ngay_nguon",
+        "sqlType": "date",
+        "localType": "date",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "DenNgayCT",
+        "json": "to_date",
+        "target": "den_ngay_nguon",
+        "sqlType": "date",
+        "localType": "date",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Phong",
+        "json": "room_code_reference",
+        "target": "ma_phong_tham_chieu",
+        "sqlType": "varchar(128)",
+        "localType": "varchar(128)",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": "PhongHoc.SoPhong"
+      },
+      {
+        "sql": "Sang",
+        "json": "morning_flag_source",
+        "target": "co_khoa_sang_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Chieu",
+        "json": "afternoon_flag_source",
+        "target": "co_khoa_chieu_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "Toi",
+        "json": "evening_flag_source",
+        "target": "co_khoa_toi_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "conduct-class-assignments",
+    "table": "PhanLopRenLuyen",
+    "target": "phan_lop_ren_luyen",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KeHoachID",
+        "json": "plan_source_id",
+        "target": "hoc_ky_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_ky",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HoSoSVID",
+        "json": "student_source_id",
+        "target": "sinh_vien_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "sinh_vien",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LopRenLuyenID",
+        "json": "conduct_class_source_id",
+        "target": "lop_ren_luyen_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "lop_sinh_hoat",
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "class-merges",
+    "table": "GhepLopSinhHoat",
+    "target": "ghep_lop_sinh_hoat",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KeHoachID",
+        "json": "plan_source_id",
+        "target": "hoc_ky_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_ky",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LopGocID",
+        "json": "original_class_source_id",
+        "target": "lop_goc_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "lop_sinh_hoat",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "LopNhanID",
+        "json": "receiving_class_source_id",
+        "target": "lop_nhan_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "lop_sinh_hoat",
+        "raw": null,
+        "ref": null
+      }
+    ]
+  },
+  {
+    "resource": "student-progress",
+    "table": "TienDoSinhVien",
+    "target": "tien_do_sinh_vien",
+    "fields": [
+      {
+        "sql": "ID",
+        "json": "source_id",
+        "target": "ma_dinh_danh_ben_ngoai",
+        "sqlType": "bigint",
+        "localType": "nvarchar(512)",
+        "nullable": false,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "KeHoachID",
+        "json": "plan_source_id",
+        "target": "hoc_ky_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "hoc_ky",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HoSoSVID",
+        "json": "student_source_id",
+        "target": "sinh_vien_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "sinh_vien",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "NganhID",
+        "json": "program_source_id",
+        "target": "chuong_trinh_dao_tao_id",
+        "sqlType": "bigint",
+        "localType": "bigint",
+        "nullable": false,
+        "parent": "chuong_trinh_dao_tao",
+        "raw": null,
+        "ref": null
+      },
+      {
+        "sql": "HocKyHienTai",
+        "json": "current_semester_index",
+        "target": "chi_so_hoc_ky_hien_tai_nguon",
+        "sqlType": "smallint",
+        "localType": "smallint",
+        "nullable": true,
+        "parent": null,
+        "raw": null,
+        "ref": null
+      }
+    ]
+  }
+]

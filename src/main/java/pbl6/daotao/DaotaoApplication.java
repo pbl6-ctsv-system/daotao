@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CtsvApplication {
+public class DaotaoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CtsvApplication.class, args);
+        SpringApplication.run(DaotaoApplication.class, args);
     }
 
 }

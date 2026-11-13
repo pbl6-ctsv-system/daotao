@@ -1,0 +1,234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "mode",
+    "source_epoch",
+    "export_id",
+    "from_version",
+    "to_version",
+    "as_of",
+    "items",
+    "next_cursor"
+  ],
+  "properties": {
+    "mode": {
+      "enum": [
+        "full",
+        "incremental"
+      ]
+    },
+    "source_epoch": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "export_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "from_version": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/version"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "to_version": {
+      "$ref": "#/$defs/version"
+    },
+    "as_of": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "next_cursor": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "full"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "from_version": {
+            "type": "null"
+          },
+          "items": {
+            "items": {
+              "properties": {
+                "operation": {
+                  "const": "upsert"
+                },
+                "change_version": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "from_version": {
+            "$ref": "#/$defs/version"
+          },
+          "items": {
+            "items": {
+              "properties": {
+                "change_version": {
+                  "$ref": "#/$defs/version"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]{0,18})$"
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_code",
+        "unit_name",
+        "department_code",
+        "updated_at",
+        "is_active",
+        "archive_status",
+        "unit_classification"
+      ],
+      "properties": {
+        "unit_code": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "unit_name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 512
+        },
+        "department_code": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 128
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "is_active": {
+          "type": "boolean"
+        },
+        "archive_status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 128
+        },
+        "unit_classification": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 128
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "operation",
+        "change_version",
+        "data"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]{0,18}$"
+        },
+        "operation": {
+          "enum": [
+            "upsert",
+            "delete"
+          ]
+        },
+        "change_version": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/version"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "data": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/data"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "delete"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "data": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "data": {
+                "$ref": "#/$defs/data"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "classification": "SYNTHETIC, no real PII",
+  "data": {
+    "ethnicities": {
+      "code": "P02-ethnicities-1",
+      "name": "SYNTHETIC-1"
+    },
+    "nationalities": {
+      "code": "P02-nationalities-1",
+      "name": "SYNTHETIC-1"
+    },
+    "localities": {
+      "code": "P02-localities-1",
+      "name": "SYNTHETIC-1"
+    },
+    "plans": {
+      "code": "P02-plans-1",
+      "name": "SYNTHETIC-1",
+      "source_day": "SYNTHETIC-1",
+      "source_first_week": "SYNTHETIC-1",
+      "weeks": "1.2500000000",
+      "source_start_day": "SYNTHETIC-1",
+      "major_code_source": "P02-plans-1",
+      "academic_year_source": "SYNTHETIC-1"
+    },
+    "cohorts": {
+      "code": "P02-cohorts-1",
+      "admission_year": 7
+    },
+    "national-majors": {
+      "code": "P02-national-majors-1",
+      "name": "SYNTHETIC-1",
+      "education_level": "SYNTHETIC-1"
+    },
+    "internal-majors": {
+      "code": "P02-internal-majors-1",
+      "name": "SYNTHETIC-1",
+      "national_major_source_id": "1100601",
+      "education_level": "SYNTHETIC-1",
+      "major_group": "SYNTHETIC-1",
+      "cancellation_status": "SYNTHETIC-1",
+      "classification_symbol": "SYNTHETIC-1"
+    },
+    "programs": {
+      "code": "P02-programs-1",
+      "name": "SYNTHETIC-1",
+      "internal_major_source_id": "1100701",
+      "national_major_source_id": "1100601",
+      "education_level": "SYNTHETIC-1",
+      "credits": "1.2500000000",
+      "semester_count": 7,
+      "teaching_language": "SYNTHETIC-1",
+      "source_start": "SYNTHETIC-1",
+      "source_end": "SYNTHETIC-1",
+      "start_plan_source_id": "1100401",
+      "end_plan_source_id": "1100401",
+      "classification_symbol": "SYNTHETIC-1",
+      "usage_flag_source": "SYNTHETIC-1",
+      "education_level_code": "P02-programs-1",
+      "new_name": "SYNTHETIC-1",
+      "curriculum_type": "SYNTHETIC-1"
+    },
+    "classes": {
+      "code": "P02-classes-1",
+      "name": "SYNTHETIC-1",
+      "program_source_id": "1100801",
+      "management_unit_source_id": "1100001",
+      "study_mode": "SYNTHETIC-1",
+      "education_level": "SYNTHETIC-1",
+      "cohort_source_id": "1100501",
+      "curriculum_code": "P02-classes-1",
+      "combined_class_flag_source": "SYNTHETIC-1"
+    },
+    "students": {
+      "student_code": "P02-students-1",
+      "full_name": "SYNTHETIC-1",
+      "birth_date": "2026-11-12",
+      "gender": "SYNTHETIC-1",
+      "birth_place_source_id": "1100301",
+      "ethnicity_source_id": "1100101",
+      "nationality_source_id": "1100201",
+      "citizen_id": "SYNTHETIC-1",
+      "phone_number": "SYNTHETIC-1",
+      "email": "SYNTHETIC-1",
+      "current_class_source_id": "1100901",
+      "management_unit_source_id": "1100001",
+      "cohort_source_id": "1100501",
+      "program_source_id": "1100801",
+      "study_status": "SYNTHETIC-1",
+      "education_level": "SYNTHETIC-1",
+      "status_plan_source_id": "1100401",
+      "start_plan_source_id": "1100401",
+      "end_plan_source_id": "1100401",
+      "student_record_code": "P02-students-1",
+      "admission_date_source": "SYNTHETIC-1",
+      "education_system_code": "P02-students-1",
+      "stored_at_source": "SYNTHETIC-1",
+      "storage_type": "SYNTHETIC-1",
+      "study_deadline_plan_source_id": "1100401",
+      "quality_program_flag_source": "SYNTHETIC-1"
+    },
+    "academic-results": {
+      "student_source_id": "1101001",
+      "plan_source_id": "1100401",
+      "program_source_id": "1100801",
+      "source_year_index": "SYNTHETIC-1",
+      "source_semester_index": "SYNTHETIC-1",
+      "registered_course_load": "1.2500000000",
+      "required_course_load": "1.2500000000",
+      "repeated_credits": "1.2500000000",
+      "study_average_10": "1.2500000000",
+      "scholarship_average": "1.2500000000",
+      "closing_classification": "SYNTHETIC-1",
+      "accumulated_course_load": "1.2500000000",
+      "accumulated_average": "1.2500000000",
+      "accumulated_average_10": "1.2500000000",
+      "classification": "SYNTHETIC-1",
+      "registered_load": "1.2500000000",
+      "repeated_load": "1.2500000000",
+      "curriculum_credits": "1.2500000000",
+      "progress_credits": "1.2500000000",
+      "credit_ratio": "1.2500000000",
+      "conduct_score_source": "SYNTHETIC-1",
+      "withdrawal_status": "SYNTHETIC-1",
+      "interruption_status": "SYNTHETIC-1",
+      "interrupted_semester_count_source": "SYNTHETIC-1",
+      "study_plan_code_source": "P02-academic-results-1",
+      "stop_flag_source": "SYNTHETIC-1"
+    },
+    "courses": {
+      "course_code": "P02-courses-1",
+      "course_name": "SYNTHETIC-1",
+      "credits": "1.2500000000",
+      "project_credits": "1.2500000000",
+      "internship_flag_source": "SYNTHETIC-1",
+      "grading_formula_code": "P02-courses-1",
+      "course_type": "SYNTHETIC-1",
+      "education_level": "SYNTHETIC-1",
+      "virtual_course_type": "SYNTHETIC-1",
+      "graduation_project_flag_source": "SYNTHETIC-1"
+    },
+    "curriculum-items": {
+      "curriculum_code": "P02-curriculum-items-1",
+      "course_source_id": "1101401",
+      "replaced_course_source_id": "1101401",
+      "curriculum_semester": 7,
+      "elective_flag_source": "SYNTHETIC-1",
+      "project_prerequisite_source": "SYNTHETIC-1",
+      "graduation_classification": "SYNTHETIC-1"
+    },
+    "course-results": {
+      "plan_source_id": "1100401",
+      "student_source_id": "1101001",
+      "course_source_id": "1101401",
+      "equivalent_course_source_id": "1101401",
+      "grade": "1.2500000000",
+      "note": "SYNTHETIC-1",
+      "retake_flag_source": "SYNTHETIC-1",
+      "check_status_source": "SYNTHETIC-1",
+      "course_tuition": "1.2500000000",
+      "tuition_debt_flag_source": "SYNTHETIC-1",
+      "document_number": "SYNTHETIC-1",
+      "student_course_reference": "SYNTHETIC-1"
+    },
+    "recognized-course-results": {
+      "plan_source_id": "1100401",
+      "course_source_id": "1101401",
+      "student_source_id": "1101001",
+      "grade": "1.2500000000",
+      "recognition_type": "SYNTHETIC-1",
+      "recognized_on": "2026-11-12",
+      "note": "SYNTHETIC-1",
+      "equivalent_course_source_id": "1101401",
+      "retake_flag_source": "SYNTHETIC-1"
+    },
+    "reference-values": {
+      "code": "P02-reference-values-1",
+      "name": "SYNTHETIC-1",
+      "value": "SYNTHETIC-1",
+      "note": "SYNTHETIC-1"
+    },
+    "rooms": {
+      "room_code": "P02-rooms-1",
+      "building_code_source": "P02-rooms-1",
+      "usage_flag_source": 7,
+      "lock_flag_source": 7
+    },
+    "room-usage": {
+      "course_class_code": "P02-room-usage-1",
+      "room_code_reference": "P02-room-usage-1",
+      "usage_date": "2026-11-12",
+      "first_period": 7,
+      "last_period": 7,
+      "schedule_reference": "SYNTHETIC-1",
+      "absence_makeup_reference": "SYNTHETIC-1",
+      "hidden_flag_source": 7,
+      "online_flag_source": 7,
+      "holiday_flag_source": 7,
+      "exam_flag_source": 7
+    },
+    "room-locks": {
+      "lock_reference": "SYNTHETIC-1",
+      "from_date": "2026-11-12",
+      "to_date": "2026-11-12",
+      "saturday_flag_source": 7,
+      "sunday_flag_source": 7
+    },
+    "room-lock-details": {
+      "lock_reference": "SYNTHETIC-1",
+      "from_date": "2026-11-12",
+      "to_date": "2026-11-12",
+      "room_code_reference": "P02-room-lock-details-1",
+      "morning_flag_source": 7,
+      "afternoon_flag_source": 7,
+      "evening_flag_source": 7
+    },
+    "conduct-class-assignments": {
+      "plan_source_id": "1100401",
+      "student_source_id": "1101001",
+      "conduct_class_source_id": "1100901"
+    },
+    "class-merges": {
+      "plan_source_id": "1100401",
+      "original_class_source_id": "1100901",
+      "receiving_class_source_id": "1100901"
+    },
+    "student-progress": {
+      "plan_source_id": "1100401",
+      "student_source_id": "1101001",
+      "program_source_id": "1100801",
+      "current_semester_index": 7
+    }
+  }
+}
